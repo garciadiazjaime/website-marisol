@@ -8,30 +8,18 @@ const images = [
   '/gift_04.jpeg',
   '/gift_05_a.png',
   '/gift_06_a.png',
-  '/gift_07.jpg',
+  '/gift_08.jpg',
+  '/gift_09.jpg',
 ]
 const info = [
-  (<div>click to unwrap </div>),
+  (<div>Click to open</div>),
+  (<div>click to unwrap</div>),
   (<div>click to see what's inside</div>),
   (<div>click to unbox</div>),
-  (<div>hmm??</div>),
   (<div>Click to read new message</div>),
-  (<div>!!</div>),
-  (<div className='info'>
-    <p>
-      Eres la persona más buena, linda y resiliente del mundo. 
-      La forma que le echas ganas día a día es inspiradora. 
-      Esperamos que este nuevo año esté lleno de cosas lindas. 
-      Y lo más seguro es que otras no tan lindas también, pero.. 
-    </p>
-    <p>
-      The journey is never ending. There's always gonna be growth, improvement, adversity; you just gotta take it all in and stay the course, continue to grow, continue to live in the moment and always always always choose happiness.  
-      Estamos contigo siempre. 
-    </p>
-    <p>
-      Te queremos infinito.
-    </p>
-  </div>)
+  (<div>click to read user guide</div>),
+  (<div>click for page two</div>),
+  (<div></div>),
 ]
 
 export default function Home() {
@@ -69,7 +57,7 @@ export default function Home() {
           ))}
         </div>
         <div>
-          <div className='btn' onClick={reset}>reset</div>
+          <div className='reset' onClick={reset}>reset</div>
         </div>
         
       </main>
@@ -77,13 +65,13 @@ export default function Home() {
         h1 {
           text-align: center;
         }
-        .btn {
+        .reset {
           position: fixed;
-          right: 20px;
-          bottom: 20px;
-          font-size: 40px;
+          right: 4px;
+          bottom: 4px;
+          font-size: 20px;
         }
-        .btn:hover {
+        .reset:hover {
           cursor: pointer;
           text-decoration: underline;
         }
@@ -113,6 +101,12 @@ export default function Home() {
           .grid {
             width: 100%;
             flex-direction: column;
+          }
+
+          .reset {
+            font-size: 20px;
+            right: 4px;
+            bottom: 4px;
           }
         }
       `}</style>
