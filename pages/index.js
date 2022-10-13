@@ -12,11 +12,11 @@ const images = [
   '/gift_09.jpg',
 ]
 const info = [
-  (<div>Click to open</div>),
+  (<div>click to open</div>),
   (<div>click to unwrap</div>),
   (<div>click to see what's inside</div>),
   (<div>click to unbox</div>),
-  (<div>Click to read new message</div>),
+  (<div>click to read new message</div>),
   (<div>click to read user guide</div>),
   (<div>click for page two</div>),
   (<div></div>),
